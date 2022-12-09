@@ -161,13 +161,16 @@ img {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
 }
 .button.primary:hover,
 .button.primary:focus {
     background: #404BBF;
+    box-shadow: 
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* Marking Features */
@@ -191,6 +194,17 @@ img {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+}
+.feature-box-icon {
+    padding: 24px 100px;
+    margin-bottom: 8px;
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background-color: #F4F4FD;
+}
+.feature-icon {
+    fill: var(--light-color);
 }
 
 .visually-hidden {
@@ -259,7 +273,6 @@ img {
 }
 
 .team-page {
-    margin-bottom: 8px;
     color: var(--dark-color);
     font-weight: 500;
     font-size: 20px;
@@ -268,17 +281,72 @@ img {
 }
 .team-text {
     text-align: center;
+    margin-bottom: 8px;
+    margin-top: 8px;
 }
-
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 4px 0px;
+}
 .social-link {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: var(--primary-brend-color);
 }
+.social-link:hover,
+.social-link:focus {
+    background-color: #31D0AA;
+}
+.social-icon {
+    fill: var(--light-color);
+}
+
+/* Marking Customers */
+.customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.customers-peage {
+    margin-bottom: 72px;
+    color: var(--dark-color);
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+.customers-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.customer-link {
+    display: flex;
+}
+.customer-logo {
+    fill: #8E8F99;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 168px;
+    height: 88px;
+}
+.customer-logo:hover,
+.customer-logo:focus {
+    fill: var(--primary-brend-color);
+    border: 1px solid var(--primary-brend-color);
+    border-radius: 4px;
+}
 
 /* Marking Footer */
+.footer-box {
+    display: flex;
+}
 .footer {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -293,6 +361,41 @@ img {
 .footer-text {
     width: 264px;
     margin-top: 16px;
+}
+.social-media-footer {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--withe-color);
+}
+.logo-footer-box {
+    margin-right: 120px;
+}
+.social-list-footer {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.social-link-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+    background-color: #31D0AA;
+}
+
+.social-icon-footer {
+    fill: var(--light-color);
 }
 
 /* MARKING PORTFOLIO */
@@ -313,7 +416,7 @@ img {
 }
 
 .button.secondary {
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--accent-color);
     border-radius: 4px;
     padding: 8px 16px;
 
@@ -332,6 +435,11 @@ img {
 .button.secondary:focus {
     background: var(--primary-brend-color);
     color: var(--withe-color);
+    border: 1px solid transparent;
+    box-shadow: 
+    0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Marking  Cards*/
@@ -351,7 +459,7 @@ img {
     flex-basis: calc(100% / 3 - 24px);
     margin-right: 24px;
     margin-bottom: 48px;
-    border: 0.5px solid #F4F4FD;
+    border: 0.5px solid var(--light-color);
 }
 
 .card-page {
@@ -364,7 +472,17 @@ img {
 
 .card-content {
     padding: 32px 16px;
-    background: #FFFFFF;
-    border: 0.5px solid #F4F4FD;
+    background: var(--withe-color);
+    
+}
+.cards .item {
+    border: 0.5px solid var(--light-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.cards .item:hover,
+.cards .item:focus {
+    box-shadow: 
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
